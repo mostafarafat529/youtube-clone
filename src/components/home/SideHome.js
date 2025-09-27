@@ -38,9 +38,10 @@ console.log("the data not found") ;
     console.log({e});
   }
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps
+
 useEffect(()=>{
 fetchdata();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 },[category])
 
   const navigate = useNavigate("");

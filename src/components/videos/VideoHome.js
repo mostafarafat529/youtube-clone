@@ -89,10 +89,12 @@ const fetch_other_data = async () => {
 
   useEffect(()=>{
 fetch_apidata_video()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[ID])
 
   useEffect(()=>{
     fetch_other_data()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[infovideo])
   
 

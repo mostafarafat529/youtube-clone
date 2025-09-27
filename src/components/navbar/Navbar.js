@@ -1,19 +1,14 @@
-import React, { useState } from 'react'
 import "./navbar.css"
 import { FaBell, FaSearch, FaVideo , FaCloudUploadAlt  } from 'react-icons/fa'
 
 import image1 from "../../images/Picsart_23-11-30_16-27-05-194.jpg"
 import { TfiMenuAlt } from 'react-icons/tfi'
 import { useNavigate } from 'react-router-dom'
-import ListSlide from './ListSlide'
+
 
 const Navbar = () => {
 
     const navigate = useNavigate("")
-
-    const [toggle_menu ,settoggle_menu] = useState(false);
-
-    console.log(toggle_menu)
 
 return (
 <div className='main-nav'>
@@ -41,10 +36,6 @@ return (
     <FaCloudUploadAlt size={15}className='upload m-2' style={{cursor:"pointer"}} />
     <img src={image1} alt="profile" style={{ width: "35px" , height:"25px", borderRadius: "50%" , cursor:"pointer" }} />
     </div>
-
-{toggle_menu && (
-<ListSlide/>
-)}
 </div>
 )
 }
