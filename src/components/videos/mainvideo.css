@@ -1,0 +1,13 @@
+.content-videos{
+    display:flex ;
+    justify-content: space-between; 
+    padding:1% 2% ;
+    background-color:#f4eeeeff ;
+}
+
+@media (max-width: 770px) {
+.content-videos{
+    flex-direction: column;
+}
+
+}

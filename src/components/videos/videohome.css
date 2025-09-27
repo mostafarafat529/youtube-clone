@@ -1,0 +1,103 @@
+.play-video{
+    width: 70%;
+}
+.play-video .video-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #5a5a5a;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.play-video .video-info .video-actions span{
+    width: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+.publisher{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.publisher img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right:10px ;
+}
+.publisher div{
+    flex: 1;
+    line-height: 18px;
+}
+.publisher div p{
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+}
+.publisher div span{
+    font-size: 12px;
+    color: #5a5a5a;
+}
+.publisher button{
+    background-color: red;
+    border-radius: 8px;
+    padding: 8px 30px;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+.video-desc{
+    padding-left: 60px;
+    margin: 15px 0;
+}
+.video-desc p{
+
+    font-size: 14px;
+    color: #5a5a5a;
+    margin: 4px;
+}
+.video-desc h3{
+    font-size: 20px;
+    color: #5a5a5a;
+}
+.comment{
+    display: flex;
+    margin: 20px 0;
+}
+.comment img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.comment h3{
+    font-size: 18px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+.comment h3 span{
+    font-size: 12px;
+    color: #5a5a5a;
+    margin-left: 6px;
+    font-weight: 500;
+}
+.comment .comment-action{
+    display: flex;
+    margin: 10px 0;
+    font-size: 12px;
+    align-items: center;
+}
+.comment .comment-action span{
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+
+@media (max-width:770px) {
+.play-video{
+    width: 100%;
+}
+.video-desc{
+    display: none;
+}
+}

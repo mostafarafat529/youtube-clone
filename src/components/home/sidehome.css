@@ -1,0 +1,46 @@
+.content {
+    width: 86%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  margin: 10px;
+  background-color: #ffffff;
+  margin-left: 13rem;
+}
+
+.card {
+  cursor: pointer;
+  transition: .3s;
+}
+.card:hover{
+  box-shadow: 0 0 10px #c6c0c0;
+}
+.card img{
+  width: 100%;
+  border-radius: 5px;
+  /* height: 200px;
+  object-fit: cover; */
+}
+.card h3{
+  
+  font-size: 18px;
+  font-weight: bold;
+  margin: 6px 0;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.card h5{
+  font-size: 16px;
+  font-weight: 600;
+  margin: 6px 0;
+  color: #555;
+}
+.card p{
+  font-size: 14px;
+}
+@media (max-width: 990px) {
+  .content {
+    margin-left: 6rem; /* مفيش فراغ في الموبايل */
+  }
+}

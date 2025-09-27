@@ -1,0 +1,42 @@
+.side-bar{
+    overflow: hidden;
+    position:fixed;
+    top: 60px;
+    left: 0;
+    z-index: 100;
+    background-color:#fff  ; box-shadow: 0 0 6px #e1dede  ; width:"12%"  ; min-height:100vh
+}
+.side-bar .lists li{
+    transition: .5s;
+}
+.side-bar .lists li:hover{
+    color: red;
+    border-bottom: 1px solid red;
+}
+.side-bar .lists li.active{
+    color: red;
+    border-bottom: 1px solid red;
+
+}
+
+.subscribed .participate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px;
+}
+
+    .side-bar .icons{
+        font-size: 1.8rem;
+    }
+    .side-bar .nameing{
+        font-size: 1rem;
+    }
+@media (max-width : 990px){
+    .side-bar .nameing{
+        display: none;
+    }
+    .side-bar .icons{
+        font-size: 1.5rem;
+    }
+}

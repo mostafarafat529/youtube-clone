@@ -1,0 +1,31 @@
+.recommendition{
+    width: 29%;
+}
+.side-video{
+    display:flex  ;
+    align-items:center ; 
+    gap:20px ; margin-bottom:6px  ;
+    cursor:pointer ;
+    transition: .3s;
+}
+/* style={{width:"52%" ,height:"100%"}} */
+.side-video img{
+    width: 100%;
+}
+/* style={{width:"48%"}} */
+.side-video .video-info{
+    width: 100%;
+}
+.side-video:hover{
+    box-shadow: 0 0 10px #595656;
+}
+
+@media (max-width:770px) {
+    .recommendition{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .side-video{
+        flex-direction: column;
+    }
+}
